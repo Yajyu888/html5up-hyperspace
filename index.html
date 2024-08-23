@@ -28,7 +28,103 @@
 				</nav>
 			</header>
 
-		
+			<!DOCTYPE html>
+			<html lang="en">
+			<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Image Carousel</title>
+				<style>
+					/* Basic reset */
+					* {
+						margin: 0;
+						padding: 0;
+						box-sizing: border-box;
+					}
+			
+					/* Carousel container */
+					.carousel {
+						width: 100%;
+						max-width: 600px;
+						margin: auto;
+						overflow: hidden;
+						position: relative;
+					}
+			
+					/* Carousel images */
+					.carousel img {
+						width: 100%;
+						display: none;
+					}
+			
+					/* Display the first image */
+					.carousel img.active {
+						display: block;
+					}
+			
+					/* Navigation buttons */
+					.carousel .nav {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						width: 100%;
+						display: flex;
+						justify-content: space-between;
+						padding: 0 10px;
+					}
+			
+					.carousel .nav button {
+						background-color: rgba(0, 0, 0, 0.5);
+						border: none;
+						color: white;
+						padding: 10px;
+						cursor: pointer;
+					}
+			
+					.carousel .nav button:hover {
+						background-color: rgba(0, 0, 0, 0.7);
+					}
+				</style>
+			</head>
+			<body>
+			
+			<!-- Carousel Structure -->
+			<div class="carousel">
+				<img src="image1.jpg" alt="Image 1" class="active">
+				<img src="image2.jpg" alt="Image 2">
+				<img src="image3.jpg" alt="Image 3">
+			
+				<!-- Navigation Controls -->
+				<div class="nav">
+					<button id="prev">&#10094;</button>
+					<button id="next">&#10095;</button>
+				</div>
+			</div>
+			
+			<!-- JavaScript for Carousel Functionality -->
+			<script>
+				const images = document.querySelectorAll('.carousel img');
+				let currentIndex = 0;
+			
+				function showImage(index) {
+					images.forEach((img, i) => {
+						img.classList.toggle('active', i === index);
+					});
+				}
+			
+				document.getElementById('next').addEventListener('click', () => {
+					currentIndex = (currentIndex + 1) % images.length;
+					showImage(currentIndex);
+				});
+			
+				document.getElementById('prev').addEventListener('click', () => {
+					currentIndex = (currentIndex - 1 + images.length) % images.length;
+					showImage(currentIndex);
+				});
+			</script>
+			
+			</body>
+			</html>
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
 				<div class="content">
