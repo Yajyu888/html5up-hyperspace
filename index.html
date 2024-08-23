@@ -73,15 +73,15 @@
 <!-- Carousel Structure -->
 <div class="carousel">
     <img src="images/fulls/01.jpg" alt="Image 1" class="active">
-    <img src="images/fulls/02.jpg" alt="Image 2">
-    <img src="images/fulls/03.jpg" alt="Image 3">
+    <img src="images/fulls/01.jpg" alt="Image 2">
+    <img src="images/fulls/01.jpg" alt="Image 3">
 </div>
 
 <!-- JavaScript for Carousel Functionality -->
 <script>
     const images = document.querySelectorAll('.carousel img');
     let currentIndex = 0;
-    const intervalTime = 3000; // 3 seconds
+    const intervalTime = 3000; // 5 seconds
 
     function showImage(index) {
         images.forEach((img, i) => {
