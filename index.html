@@ -81,10 +81,10 @@
 <script>
     const images = document.querySelectorAll('.carousel img');
     let currentIndex = 0;
-    const intervalTime = 1500; // 1.5 seconds
+    const intervalTime = 3000; // 3 seconds
 
     function showImage(index) {
-        images.forEach((img, i) => {
+        images.forEach((img, i) => {s
             img.classList.toggle('active', i === index);
         });
     }
