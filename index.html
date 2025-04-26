@@ -6,6 +6,8 @@
 -->
 <html>
 	<head>
+		<link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
 		<title>Yajyu Manandhar</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -52,19 +54,19 @@
 				<!-- Gallery  -->
 					<div class="gallery">
 						<article class="from-left">
-							<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
+							<a href="images/fulls/01.jpg" class="GLightbox"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
 						</article>
 						<article class="from-right">
-							<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
+							<a href="images/fulls/02.jpg" class="GLightbox"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
 						</article>
 						<article class="from-left">
-							<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
+							<a href="images/fulls/03.jpg" class="GLightbox"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
 						</article>
 						<article class="from-right">
-							<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
+							<a href="images/fulls/04.jpg" class="GLightbox"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
 						</article>
 						<article class="from-left">
-							<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
+							<a href="images/fulls/05.jpg" class="GLightbox"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
 						</article>
 						<article class="from-right">
 							<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
@@ -162,6 +164,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+<script>
+    const lightbox = GLightbox({
+        touchNavigation: true,
+        loop: true,
+        zoomable: true
+    });
+</script>
 
 	</body>
 </html>
