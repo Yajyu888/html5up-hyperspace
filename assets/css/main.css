@@ -742,7 +742,7 @@ table {
 
 .box {
   background: #ffffff;
-  color: #a1a2ab;
+  color: #39454b;
   padding: 2em;
 }
 
@@ -1293,6 +1293,10 @@ ul.icons a {
 }
 
 /* Sections/Article */
+
+Colport {
+  color: #f5f6f7;
+}
 
 header {
   margin-bottom: 1em;
